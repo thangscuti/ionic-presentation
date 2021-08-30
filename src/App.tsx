@@ -1,4 +1,4 @@
-import { Redirect, Route } from 'react-router-dom';
+import { HashRouter, Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
   IonIcon,
@@ -44,12 +44,14 @@ const App: React.FC = () => (
           <Route exact path="/tab2">
             <Tab2 />
           </Route>
+          {/* <HashRouter basename="/board_preview"> */}
           <Route exact path="/board_preview">
-            <Tab2 />
-          </Route>
-          <Route path="/tab3">
             <Tab3 />
           </Route>
+          {/* </HashRouter> */}
+          {/* <Route path="/tab3">
+            <Tab3 />
+          </Route> */}
           <Route exact path="/">
             <Redirect to="/tab1" />
           </Route>

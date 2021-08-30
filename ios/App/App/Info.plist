@@ -50,5 +50,21 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>Bluetooth is required to scan for nearby Chromecast devices with guest mode enabled.</string>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>Bluetooth is required to scan for nearby Chromecast devices with guest mode enabled.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Bluetooth is required to scan for nearby Chromecast devices with guest mode enabled.</string>
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>Bluetooth is required to scan for nearby Chromecast devices with guest mode enabled.</string>
+    <key>NSBonjourServices</key>
+        <array>
+          <string>_googlecast._tcp</string>
+          <!-- The default receiver ID -->
+          <string>_CC1AD845._googlecast._tcp</string>
+          <!-- IF YOU USE A CUSTOM RECEIVER, replace the line above, and put your ID instead of "[YourCustomRecieverID]" -->
+          <!-- <string>_[YourCustomRecieverID]._googlecast._tcp</string> -->
+        </array>
 </dict>
 </plist>
