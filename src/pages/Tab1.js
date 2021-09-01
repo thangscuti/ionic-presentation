@@ -52,7 +52,6 @@ const Tab1: React.FC = () => {
     initialize();
 
     function initialize () {
-      console.log("initialize");
       
         // use default app id
         var appId = chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID;
