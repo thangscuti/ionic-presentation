@@ -6,5 +6,9 @@
     <param name="ios-package" value="CDVPresentationPlugin"/>
   </feature>
 
+  <feature name="Webserver">
+    <param name="ios-package" value="Webserver"/>
+  </feature>
+
   
 </widget>

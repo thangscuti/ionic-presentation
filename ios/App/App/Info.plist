@@ -57,7 +57,8 @@
     <key>NSMicrophoneUsageDescription</key>
     <string>Bluetooth is required to scan for nearby Chromecast devices with guest mode enabled.</string>
     <key>NSLocalNetworkUsageDescription</key>
-    <string>Bluetooth is required to scan for nearby Chromecast devices with guest mode enabled.</string>
+    <string>${PRODUCT_NAME} uses the local network to discover Cast-enabled devices on your WiFi
+        network.</string>
     <key>NSBonjourServices</key>
         <array>
           <string>_googlecast._tcp</string>

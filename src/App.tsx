@@ -32,7 +32,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-
+import BoardPreview from './components/BoardPreview';
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
@@ -44,16 +44,18 @@ const App: React.FC = () => (
           <Route exact path="/tab2">
             <Tab2 />
           </Route>
-          {/* <HashRouter basename="/board_preview"> */}
-          <Route exact path="/board_preview">
+          <HashRouter  basename="/board_preview">
+          {/* <Route exact path="/board_preview"> */}
+            {/* <BoardPreview /> */}
+            {/* <Tab2 /> */}
             <Tab3 />
-          </Route>
-          {/* </HashRouter> */}
+          {/* </Route> */}
+          </HashRouter>
           {/* <Route path="/tab3">
             <Tab3 />
           </Route> */}
-          <Route exact path="/">
-            <Redirect to="/tab1" />
+          <Route exact path="/tab3">
+            <Tab3 />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
